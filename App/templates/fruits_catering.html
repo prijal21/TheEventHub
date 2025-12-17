@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Fruits Catering - Weekends Service{% endblock %}
+
+{% block content %}
+    <section id="fruits" class="py-2 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2 mb-3">
+                    <div class="bg-white rounded p-5 text-center">
+                        <i class="bi bi-basket fs-1 text-warning"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h1 class="fw-bold mb-2">Fruits Catering</h1>
+                    <p class="mb-3">Fresh and healthy fruit platters for your events</p>
+                    <p class="mb-3">Delight your guests with our beautiful fresh fruit arrangements and catering services. We provide premium quality, seasonal fruits artistically arranged for any occasion - from corporate events to family gatherings. Our fruit platters are not only visually stunning but also incredibly delicious and healthy!</p>
+                    <div class="mb-3">
+                        <h5 class="fw-bold">Available Options:</h5>
+                        <ul>
+                            <li>Seasonal fruit platters</li>
+                            <li>Tropical fruit arrangements</li>
+                            <li>Fruit skewers and kabobs</li>
+                            <li>Fruit salad bowls</li>
+                            <li>Custom fruit designs</li>
+                        </ul>
+                    </div>
+                    <a href="{% url 'contact' %}" class="btn btn-warning">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="gallery-section">
+                <h2 class="text-warning">Our Fruits Catering</h2>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/1f.jpg' %}" alt="Fruits 1">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">1</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/2f.jpg' %}" alt="Fruits 2">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">2</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/3f.jpg' %}" alt="Fruits 3">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">3</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/4f.jpg' %}" alt="Fruits 4">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">4</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/5f.jpg' %}" alt="Fruits 5">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">5</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/6f.jpg' %}" alt="Fruits 6">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">6</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/7f.jpg' %}" alt="Fruits 7">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">7</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/8f.jpg' %}" alt="Fruits 8">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">8</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/9f.jpg' %}" alt="Fruits 9">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">9</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/10f.jpg' %}" alt="Fruits 10">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">10</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/fruits_catering/11f.jpg' %}" alt="Fruits 11">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-warning">11</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

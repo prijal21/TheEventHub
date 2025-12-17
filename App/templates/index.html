@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekends Service - Home Delivery</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=12.0">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'mehendi' %}">Henna Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'birthday' %}">Birthday Party</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'fruits_catering' %}">Fruits Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'salad_dressing' %}">Salad Dressing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'juice_catering' %}">Juice Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="text-center py-4">
+                <h1 class="fw-bold mb-3">The Event Hub <span class="text-primary">Party Magic & LOVE</span></h1>
+                <p class="mb-4">Beautiful henna magic, fresh salads and delightful fruit platters, or healthy juices </p>
+                <a href="{% url 'contact' %}" class="btn btn-primary me-2">Contact Here -> </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Home Services</h2>
+            </div>
+            <div class="row g-3">
+                <!-- Service 1: Henna -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-flower1 text-pink fs-1"></i>
+                            <h5 class="fw-bold mt-3 mb-2">Henna Design</h5>
+                            <p class="mb-3">Beautiful henna designs for all occasions</p>
+                            <a href="{% url 'mehendi' %}" class="btn btn-success btn-sm">View Designs Here -> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Birthday -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-balloon-heart text-purple fs-1"></i>
+                            <h5 class="fw-bold mt-3 mb-2">Birthday Party</h5>
+                            <p class="mb-3">Special birthday and other party decoration services</p>
+                            <a href="{% url 'birthday' %}" class="btn btn-success btn-sm">View Decoration Here -> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Fruits Catering -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-basket text-warning fs-1"></i>
+                            <h5 class="fw-bold mt-3 mb-2">Fruits Catering</h5>
+                            <p class="mb-3">Fresh fruit platters catering for events</p>
+                            <a href="{% url 'fruits_catering' %}" class="btn btn-success btn-sm">View Fruits Platter Here -></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Salad Dressing -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-egg-fried text-success fs-1"></i>
+                            <h5 class="fw-bold mt-3 mb-2">Salad Dressing</h5>
+                            <p class="mb-3"> Homemade fresh salads </p>
+                            <a href="{% url 'salad_dressing' %}" class="btn btn-success btn-sm">View Salad Catering Here -> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: Juice Catering -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cup-straw text-gold fs-1"></i>
+                            <h5 class="fw-bold mt-3 mb-2">Juice Catering</h5>
+                            <p class="mb-3">Fresh juices and beverages for your events</p>
+                            <a href="{% url 'juice_catering' %}" class="btn btn-success btn-sm">View Drinks Service Here -> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 The Event Hub Party Magic & LOVE. <br> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

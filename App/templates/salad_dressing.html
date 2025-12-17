@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Salad Dressing - Weekends Service{% endblock %}
+
+{% block content %}
+    <section id="salad" class="py-2 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2 mb-3">
+                    <div class="bg-white rounded p-5 text-center">
+                        <i class="bi bi-egg-fried fs-1 text-success"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h1 class="fw-bold mb-2">Salad Dressing</h1>
+                    <p class="mb-3">Fresh, healthy, and delicious homemade salads</p>
+                    <p class="mb-3">Enjoy our nutritious and delicious fresh salads made with crisp vegetables and homemade dressings. Each salad is carefully crafted to provide maximum nutrition and incredible flavor. Perfect for a healthy meal or as a side dish for any occasion!</p>
+                    <div class="mb-3">
+                        <h5 class="fw-bold">Our Salad Varieties:</h5>
+                        <ul>
+                            <li>Garden Fresh Salad with Olive Oil Dressing</li>
+                            <li>Caesar Salad with Homemade Dressing</li>
+                            <li>Greek Salad with Feta and Olives</li>
+                            <li>Protein Power Salad with Yogurt Dressing</li>
+                            <li>Mixed Green Salad with Vinaigrette</li>
+                            <li>Custom Salad Bowls</li>
+                        </ul>
+                    </div>
+                    <a href="{% url 'contact' %}" class="btn btn-warning">Order Salads</a>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="gallery-section">
+                <h2 class="text-success">Our Salad Catering</h2>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/salad_catering/catering-7f9a42nm30wf94kgm2wbz.png' %}" alt="Salad 1">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-success">1</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/salad_catering/catering-eet1lt6oeeg30y6cvspikt.png' %}" alt="Salad 2">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-success">2</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/salad_catering/catering-k8cdu66bu4n90itj8yff3.png' %}" alt="Salad 3">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-success">3</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/salad_catering/catering-ljwrxdjdjamn5ig2em7.png' %}" alt="Salad 4">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-success">4</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/salad_catering/catering-qinywn9ml25mlmpi8pwqi.png' %}" alt="Salad 5">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-success">5</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/salad_catering/catering-tb3gkjxtayt07p92zjt.png' %}" alt="Salad 6">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-success">6</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/salad_catering/catering-uep2a6wtvcb05a01d23krx8.png' %}" alt="Salad 7">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-success">7</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="gallery-item">
+                            <img src="{% static 'img/salad_catering/catering-vd23e0rowwcqu2g39bupv.png' %}" alt="Salad 8">
+                        </div>
+                        <p class="text-center mt-2 fw-bold text-success">8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
