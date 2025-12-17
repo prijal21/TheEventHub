@@ -1,5 +1,5 @@
 """
-ASGI config for WeekendsFood project.
+ASGI config for The Event Hub project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

@@ -1,5 +1,5 @@
 """
-WSGI config for WeekendsFood project.
+WSGI config for The Event Hub project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
