@@ -54,3 +54,6 @@ htmlcov/
 # Deployment
 *.pem
 *.key
+
+
+cleanup_database.py
